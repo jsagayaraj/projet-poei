@@ -1,0 +1,14 @@
+uuid: 333f8437-b503-45e3-b2f5-8819090fe344
+name: Conference
+mail: bjsahay@gmail.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
