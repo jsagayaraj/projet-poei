@@ -1,0 +1,32 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+ .navbar>.container, .navbar>.container-fluid {
+    justify-content: flex-end;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+nav .nav-link {
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+nav .nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
