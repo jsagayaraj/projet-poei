@@ -307,3 +307,25 @@ function base_zymphonies_subtheme_form_system_theme_settings_alter(&$form, \Drup
     
   }
 }
+
+/**
+ * Implements hook_theme_suggestions_page_alter().
+ * Add suggestion template for page.html.twig
+ */
+function base_zymphonies_subtheme_suggestions_page_alter(array &$suggestions, array $variables) {
+  // Add template suggestion based on node type
+  if ($node = \Drupal::routeMatch()->getParameter('node')) {
+    $content_type = $node->bundle();
+    $suggestions[] = 'page__type__'.$content_type;
+    $suggestions[] = 'page__node__' . $node->id();
+    //kint($suggestions);
+  }
+  if ($term = \Drupal::routeMatch()->getParameter('taxonomy_term')) {
+    $vocabulary = $term->bundle();
+    $suggestions[] = 'page__vocabulary__'.$vocabulary;
+    $suggestions[] = 'page__taxonomy__term__' . $term->id();
+    //kint($suggestions);
+  }
+  
+}
+
