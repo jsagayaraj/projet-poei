@@ -1,0 +1,32 @@
+<?php
+
+//use Drupal\webform\WebformSubmissionInterface;
+
+
+
+
+
+// function conference_webform_submission_update(WebformSubmissionInterface $entity){
+    
+//     //$node_type = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'programmes']);
+
+//     $user_id = $entity->getOwnerId();
+
+//     //programme place disponible
+//     $nombre_de_place_programmes = $entity->getSourceEntity()->field_place_disponible->getValue();
+    
+ 
+//     $data = $entity->getData();
+//     ksm(intval($nombre_de_place_programmes[0]));
+
+//     // $result = $data['nombre_of_place'] - $nombre_de_place_programmes;
+//     // $entity->getSourceEntity()->field_place_disponible->setValue($result);
+    
+ 
+//     // $entity->getSourceEntity()->save();
+ 
+
+// }
+
+
+

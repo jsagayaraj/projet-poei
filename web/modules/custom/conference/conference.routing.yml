@@ -1,0 +1,21 @@
+conference.show_register_user_profile:
+  path: 'user/{user}/programmes'
+  defaults:
+    _title: 'List de submitted details'
+    _controller: '\Drupal\conference\Controller\WebformUserProfileController::show_webform_user_profile'
+  requirements:
+    _access: 'TRUE'
+
+
+conference.show_register_programme:
+  path: '/list/{node}'
+  defaults:
+    _title: 'List de submitted details'
+    _controller: '\Drupal\conference\Controller\WebformProgrammeRegisterController::show_user_register_programme'
+  requirements:
+    _access: 'TRUE'
+  options:
+    parameters:
+      node:
+        type: entity:node
+  

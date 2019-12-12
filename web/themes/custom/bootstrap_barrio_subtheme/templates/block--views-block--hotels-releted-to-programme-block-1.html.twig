@@ -29,29 +29,13 @@
  * @ingroup themeable
  */
 #}
-{# {%
+{%
   set classes = [
     'block',
     'block-' ~ configuration.provider|clean_class,
     'block-' ~ plugin_id|clean_class,
   ]
-%} #}
-
-
-    <div{{ attributes.addClass(classes) }}>
-      {{ title_prefix }}
-      {% if label %}
-        <h2{{ title_attributes }} class="text-center text-white mb-4">{{ label }}</h2>
-      {% endif %}
-      {{ title_suffix }}
-      {% block content %}
-        <div{{ content_attributes.addClass('content') }} class="bg-white">
-          {{ content }}
-        </div>
-      {% endblock %}
-    </div> 
- 
-
+%}
 {# <div{{ attributes.addClass(classes) }}>
   {{ title_prefix }}
   {% if label %}
@@ -65,3 +49,19 @@
   {% endblock %}
 </div> #}
 
+<div class="container-fluid bg-info py-5">
+  <div class="container">
+    <div{{ attributes.addClass(classes) }}>
+      {{ title_prefix }}
+      {% if label %}
+        <h2{{ title_attributes }} class="text-center text-white mb-4">{{ label }}</h2>
+      {% endif %}
+      {{ title_suffix }}
+      {% block content %}
+        <div{{ content_attributes.addClass('content') }} class="bg-white">
+          {{ content }}
+        </div>
+      {% endblock %}
+    </div>
+  </div>
+</div>
