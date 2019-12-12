@@ -1,0 +1,5 @@
+conference.programmes:
+  title: Programmes
+  route_name: conference.show_register_user_profile
+  base_route: entity.user.canonical
+  weight: 2

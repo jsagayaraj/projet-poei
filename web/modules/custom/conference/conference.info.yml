@@ -1,0 +1,5 @@
+name: 'Conference'
+type: module
+description: 'Module for conference'
+core: 8.x
+package: 'Training'
