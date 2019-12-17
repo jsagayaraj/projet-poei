@@ -3,3 +3,9 @@ conference.programmes:
   route_name: conference.show_register_user_profile
   base_route: entity.user.canonical
   weight: 2
+
+conference.inscriptions:
+  title: Programmes Inscrit
+  route_name: conference.show_register_programme
+  base_route: entity.node.canonical
+  weight: 2
