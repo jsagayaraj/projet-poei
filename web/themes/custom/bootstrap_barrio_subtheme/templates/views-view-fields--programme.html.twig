@@ -29,7 +29,7 @@
  * @see template_preprocess_views_view_fields()
  */
 #}
-{# {% for field in fields -%}
+ {# {% for field in fields -%}
   {{ field.separator }}
   {%- if field.wrapper_element -%}
     <{{ field.wrapper_element }}{{ field.wrapper_attributes }}>
@@ -49,31 +49,18 @@
   {%- if field.wrapper_element -%}
     </{{ field.wrapper_element }}>
   {%- endif %}
-{%- endfor %} #}
+{%- endfor %}  #}
 
 
 
-<div class="container my-5">
-  <div class="row">
-    <div class="col-md-4">
-      <div class="card" style="width: 20rem;">
+
+
+    <div class="card">
         {{ fields.field_image_programme.content }}
       <div class="card-body">
         <h2 class="text-primary">{{ fields.title.content }}</h2>
         <p class="card-text"><i class="far fa-calendar-alt fa-1x"></i>{{ fields.field_date_de_dubut.content }}</p>
         <p class="card-text"><i class="fas fa-map-marker-alt fa-1x"></i>{{fields.field_ville_p.content}}, {{fields.field_pays_p.content}}</p>
-        
       </div>
-    </div>
-  </div>
-  </div>
-</div>
+    </div> 
 
-
-
-
-
-{# {{ fields.field_des.content }}
-{{ fields.field_date_de_dubut.content }}
-{{ fields.field_date_de_fin.content }}
-{{ fields.field_budget.content }} #}

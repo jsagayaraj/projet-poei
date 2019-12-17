@@ -10,6 +10,21 @@ p{
     
 }
 
+
+.content > h1 {
+    color: #1897D2;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.view-content.row {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.card{
+    margin-bottom: 2rem;
+}
  img{
      max-width: 100%;
      height: auto;

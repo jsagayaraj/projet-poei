@@ -59,7 +59,7 @@
  * @see template_preprocess_node()
  */
 #}
-{{ attach_library('bootstrap_barrio/node') }}
+{# {{ attach_library('bootstrap_barrio/node') }}
 
 {%
   set classes = [
@@ -71,7 +71,7 @@
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
   ]
-%}
+%} #}
 <article class="my-5">
   {# <header>
     {{ title_prefix }}
@@ -95,9 +95,10 @@
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
-  </div>  #}
+  </div> 
+</article> #}
 
-<div class="container programme">
+ <div class="container programme">
   <div class="row pt-3">
     <div class="col-md-8">
       {{ content.field_image_programme }}
@@ -163,4 +164,4 @@
       
     </div>
   </div>
-</div> 
+</div>  

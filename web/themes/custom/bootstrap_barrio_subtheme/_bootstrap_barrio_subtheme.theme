@@ -56,4 +56,25 @@ function bootstrap_barrio_subtheme_suggestions_page_alter(array &$suggestions, a
 }
 
 
+// function organisation_webform_submission_update(WebformSubmissionInterface $entity){
+//   $user_id = $entity->getOwnerId();
+//   $participants = $entity->getSourceEntity()->field_participants->getValue();
+//   $data = $entity->getData();
+//   ksm($data);
+//   //ajoute le participant à la Conférence
+//   if($data['adhesion'] == 'acceptée' && !in_array(['target_id'=> $user_id], $participants)) {
+//     $entity->getSourceEntity()->field_participants->setValue(
+//       array_merge($participants, ['target_id'=> $user_id])
+//     );
+//     $entity->getSourceEntity()->save();
+//   }
 
+//   // supprime le participant à la Conférence
+//   if($data['adhesion'] != 'acceptée' && in_array(['target_id'=> $user_id], $participants)) {
+//     $key_data = array_search(['target_id'=> $user_id], $participants);
+//     unset($participants[$key_data]);
+//     $entity->getSourceEntity()->field_participants->setValue($participants);
+//     $entity->getSourceEntity()->save();
+//   }
+//   ksm($participants);
+// }

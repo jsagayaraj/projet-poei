@@ -13,7 +13,8 @@ conference.show_register_programme:
     _title: 'List de submitted details'
     _controller: '\Drupal\conference\Controller\WebformProgrammeRegisterController::show_user_register_programme'
   requirements:
-    _access: 'TRUE'
+    #_role: 'organisateur_programme'
+    _access_conference: 'TRUE'
   options:
     parameters:
       node:

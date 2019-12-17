@@ -1,32 +1,29 @@
 <?php
 
-//use Drupal\webform\WebformSubmissionInterface;
+use Drupal\webform\WebformSubmissionInterface;
 
 
 
 
+function conference_webform_submission_update(WebformSubmissionInterface $entity){
+  $user_id = $entity->getOwnerId();
+  $participants = $entity->getSourceEntity()->field_participants_du_programme->getValue();
+  $data = $entity->getData();
+  //ksm($data);
+  //ajoute le participant à la Conférence
+  if($data['adhesion'] == 'acceptee' && !in_array(['target_id'=> $user_id], $participants)) {
+    $entity->getSourceEntity()->field_participants_du_programme->setValue(
+      array_merge($participants, ['target_id'=> $user_id])
+    );
+    $entity->getSourceEntity()->save();
+  }
 
-// function conference_webform_submission_update(WebformSubmissionInterface $entity){
-    
-//     //$node_type = \Drupal::entityTypeManager()->getStorage('node')->loadByProperties(['type' => 'programmes']);
-
-//     $user_id = $entity->getOwnerId();
-
-//     //programme place disponible
-//     $nombre_de_place_programmes = $entity->getSourceEntity()->field_place_disponible->getValue();
-    
- 
-//     $data = $entity->getData();
-//     ksm(intval($nombre_de_place_programmes[0]));
-
-//     // $result = $data['nombre_of_place'] - $nombre_de_place_programmes;
-//     // $entity->getSourceEntity()->field_place_disponible->setValue($result);
-    
- 
-//     // $entity->getSourceEntity()->save();
- 
-
-// }
-
-
-
+  // supprime le participant à la Conférence
+  if($data['adhesion'] != 'acceptee' && in_array(['target_id'=> $user_id], $participants)) {
+    $key_data = array_search(['target_id'=> $user_id], $participants);
+    unset($participants[$key_data]);
+    $entity->getSourceEntity()->field_participants_du_programme->setValue($participants);
+    $entity->getSourceEntity()->save();
+  }
+  //ksm($participants);
+}
