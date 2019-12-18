@@ -20,72 +20,38 @@ class WebformProgrammeRegisterController extends ControllerBase{
 
         $submission_data = array();
             foreach ($webform_submission as $submission) {
-            $submission_data[] = [$submission->getData()['prenom'],$submission->getData()['nom'], $submission->getData()['email'], $submission->getData()['adhesion'], $submission->toLink('modifier', 'edit-form')];
+            $submission_data[] = [
+                                  $submission->getData()['prenom'],
+                                  $submission->getData()['nom'],
+                                  $submission->getData()['email'],
+                                  $submission->getData()['adhesion'],
+                                  $submission->toLink('modifier', 'edit-form')
+                                ];
+
             //$submission_data[] = $submission->getData();
             //ksm($submission_data);
         }
         $status_table = [
             '#type' => 'table',
-            '#header' => ['Nom', 'Prenom', 'Email','Status', 'Action'],
+            '#header' => [
+              $this->t('Nom'),
+              $this->t('Prenom'),
+              $this->t('Email'),
+              $this->t('Status'),
+              $this->t('Action')
+            ],
             '#rows' => $submission_data,
             '#empty'=> $this->t('You are not register any conference yet'),
         ];
-        return [$status_table];
+        return [
+          $status_table,
+          '#cache' => [
+            'max-age' => 0,
+          ]
+
+        ];
 
     }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        //     $user = \Drupal::routeMatch()->getParameter('user');
-        //     $query = \Drupal::database()->select('webform_submission', 's');
-        //     $query->fields('s', ['sid', 'entity_id'])
-        //     ->condition('s.uid', $user);
-        //     $sid_entity_id = $query->execute();
-
-           
-            
-        //     if(!empty($sid_entity_id)){
-        //     $user_programme_status = [];
-        //     foreach($sid_entity_id as $info_ids){
-            
-        //     $query = \Drupal::database()->select('webform_submission', 'w');
-        //     $query->join('webform_submission_data', 'd', "d.sid = $info_ids->sid AND d.name = 'adhesion'");
-        //     $query->join('node_field_data', 'n', "n.nid = $info_ids->entity_id");
-        //     $result = $query
-        //         ->fields('d', array('value'))
-        //         ->fields('n', array('title'))
-        //         ->execute();
-        //         foreach ($result as $record){
-        //         $user_programme_status[]= [$record->title, $record->value,];
-        //         }
-        //         $status_table = [
-        //             '#type' => 'table',
-        //             '#header' => ['Programme Title', 'Adhesion'],
-        //             '#rows' => $user_programme_status,
-        //             '#empty'=> $this->t('You are not register any conference yet'),
-        //         ];
-        //         return [$status_table];
-        //     }
-        // }
-
-        // $msg = $this->t('you are name @username', ['@username'=> $this->currentUser()->getDisplayName(),]);
-        // return ['#markup' => $msg];
-
-   
-    //}
 }

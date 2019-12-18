@@ -1,0 +1,15 @@
+conference.add_content:
+  title: 'Add Content'
+  route_name: node.add_page
+  menu_name: account
+
+conference.voir_content:
+  title: 'Voir Content'
+  route_name: system.admin_content
+  menu_name: account
+
+conference.admin_form:
+  title: 'Send Email'
+  route_name: conference.admin_form
+  menu_name: account
+  #parent: system.admin_config

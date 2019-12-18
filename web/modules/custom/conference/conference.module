@@ -1,7 +1,8 @@
 <?php
 
 use Drupal\webform\WebformSubmissionInterface;
-
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Url;
 
 
 
@@ -11,19 +12,60 @@ function conference_webform_submission_update(WebformSubmissionInterface $entity
   $data = $entity->getData();
   //ksm($data);
   //ajoute le participant à la Conférence
-  if($data['adhesion'] == 'acceptee' && !in_array(['target_id'=> $user_id], $participants)) {
+  if($data['adhesion'] == 'accepte' && !in_array(['target_id'=> $user_id], $participants)) {
     $entity->getSourceEntity()->field_participants_du_programme->setValue(
       array_merge($participants, ['target_id'=> $user_id])
     );
     $entity->getSourceEntity()->save();
   }
 
-  // supprime le participant à la Conférence
-  if($data['adhesion'] != 'acceptee' && in_array(['target_id'=> $user_id], $participants)) {
-    $key_data = array_search(['target_id'=> $user_id], $participants);
-    unset($participants[$key_data]);
-    $entity->getSourceEntity()->field_participants_du_programme->setValue($participants);
-    $entity->getSourceEntity()->save();
-  }
+//  if($data['adhesion'] == 'refuse' || $data['adhesion'] == 'attente') {
+//    $key_data = array_search(['target_id'=> $user_id], $participants);
+//    unset($participants[$key_data]);
+//    $entity->getSourceEntity()->field_participants_du_programme->setValue($participants);
+//    $entity->getSourceEntity()->save();
+//  }
+
+
+   //supprime le participant à la Conférence
+   if($data['adhesion'] != 'accepte'  && in_array(['target_id'=> $user_id], $participants)) {
+     $key_data = array_search(['target_id'=> $user_id], $participants);
+     unset($participants[$key_data]);
+     $entity->getSourceEntity()->field_participants_du_programme->setValue($participants);
+     $entity->getSourceEntity()->save();
+   }
   //ksm($participants);
 }
+
+
+
+// send email
+function conference_mail($key, &$message, $params)
+{
+  $message['headers']['Content-Type'] = 'text/html; charset=UTF-8\n; format=flowed; display=yes';
+  $message['headers']['MIME-Version'] = '1.0';
+  $message['headers']['Content-Transfer-Encoding'] = '8bit';
+  $message['headers']['X-Mailer'] = 'Drupal';
+  switch ($key) {
+    case 'mykey':
+      $message['from'] = 'bjsahay@gmail.com';
+      $message['subject'] = t('@title', array('@title' => $params['subject']));
+      $message['body'][] = $params['body'];
+      break;
+  }
+}
+
+//
+////Redirect to profile page
+//function conference_user_login_submit(&$form, FormStateInterface $form_state) {
+//  $user = \Drupal::currentUser()->id();
+//  $url = Url::fromRoute('conference.profile', ['user' => $user]);
+//  // Check if a destination was set, probably on an exception controller.
+//  $request = \Drupal::service('request_stack')->getCurrentRequest();
+//  if (!$request->request->has('destination')) {
+//    $form_state->setRedirectUrl($url);
+//  }
+//  else {
+//    $request->query->set('destination', $request->request->get('destination'));
+//  }
+//}

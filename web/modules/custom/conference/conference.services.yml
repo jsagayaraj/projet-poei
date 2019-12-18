@@ -1,5 +1,5 @@
 services:
   access_check.conference:
     class: Drupal\conference\Access\ConferenceAccessCheck
-    tags: 
+    tags:
     - { name: access_check, applies_to: _access_conference}

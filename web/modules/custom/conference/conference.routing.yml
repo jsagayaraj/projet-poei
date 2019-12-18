@@ -8,15 +8,38 @@ conference.show_register_user_profile:
 
 
 conference.show_register_programme:
-  path: '/list/{node}'
+  path: '/participants-inscrits/{node}'
   defaults:
-    _title: 'List de submitted details'
+    _title: 'Participants Inscrits'
     _controller: '\Drupal\conference\Controller\WebformProgrammeRegisterController::show_user_register_programme'
   requirements:
     #_role: 'organisateur_programme'
     _access_conference: 'TRUE'
+    #_access: 'TRUE'
   options:
     parameters:
       node:
         type: entity:node
-  
+
+
+#Send Email
+conference.admin_form:
+  path: '/admin/config/send-email'
+  defaults:
+    _title: 'Send Email'
+    _form: '\Drupal\conference\Form\EmailParticipantForm'
+  requirements:
+    #_access: 'TRUE'
+    _role: 'organisateur_programme'
+
+
+#PROFILE USER
+conference.show_profile:
+  path: '/user/{user}/profile'
+  defaults:
+    _title: 'Profile'
+    _controller: '\Drupal\conference\Controller\ProfileController::show_profile'
+  requirements:
+    _access: 'TRUE'
+    #_role: 'organisateur_programme'
+
