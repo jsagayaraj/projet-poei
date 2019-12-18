@@ -4,8 +4,14 @@ conference.programmes:
   base_route: entity.user.canonical
   weight: 2
 
-conference.inscriptions:
-  title: Programmes Inscrit
+conference.add_content:
+  title: Participants Inscrits
   route_name: conference.show_register_programme
   base_route: entity.node.canonical
-  weight: 2
+  weight: 3
+
+conference.profile:
+  title: Profile
+  route_name: conference.show_profile
+  base_route: entity.user.canonical
+  weight: 5
