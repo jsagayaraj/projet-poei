@@ -104,9 +104,11 @@
       {{ content.field_image_programme }}
     </div>  
     <div class="col-md-4 d-flex flex-column">
+      <p class="social-media"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></p>
       <p>{{ content.field_date_de_dubut }}</p>
       <h2>{{ content.field_titre_de_programme }}</h2>
-      <div>Place disponible : <span class="badge badge-success">{{ content.field_place_disponible }}</span></div>
+      
       
       <div class="mt-auto">
         {% if logged_in %}
@@ -115,7 +117,7 @@
             Inscription
           </button>
           {% else %}
-          <div><a href="{{base_url}}/user/login" class="btn btn-success btn-lg btn-block">Connection</a></div>
+          <div><a href="{{base_url}}/user/login" class="btn btn-warning btn-lg btn-block">Connectez-vous pour vous inscrire</a></div>
         {% endif %}
       </div>
         
@@ -127,8 +129,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8">
-      <h3>Description du programme</h3>
+    <div class="col-md-8">      
       {{ content.field_des }}
       
     </div>  

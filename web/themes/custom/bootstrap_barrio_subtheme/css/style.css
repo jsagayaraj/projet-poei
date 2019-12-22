@@ -7,7 +7,7 @@
 }
 p{
     color: #6b6b6b;
-    
+
 }
 
 
@@ -17,10 +17,10 @@ p{
     padding-top: 2rem;
 }
 
-.view-content.row {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
-}
+/*.view-content.row {*/
+/*    padding-top: 5rem;*/
+/*    padding-bottom: 5rem;*/
+/*}*/
 
 .card{
     margin-bottom: 2rem;
@@ -83,8 +83,8 @@ nav .nav-link:hover::after {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center; 
-  
+    justify-content: center;
+
 }
 
 .centered {
@@ -103,7 +103,7 @@ nav .nav-link:hover::after {
     padding-top: 0;
     padding-bottom: 0;
     margin-right: 0;
-    
+
 }
 
 
@@ -119,3 +119,50 @@ li{
 }
 
 
+.site-footer .block {
+   margin: 0;
+   border: none;
+
+}
+
+
+.region-footer-second a {
+  margin-left: 20px;
+}
+.fa-facebook-square{
+  color: #3b5998;
+}
+
+.fa-tweeter-square{
+  color: #1da1f2;
+}
+.row{
+    margin-right: 0;
+    margin-left: 0;
+}
+
+footer .site-footer__top section{
+    border-right: 1px solid lightgrey;
+    height: 200px;
+}
+
+footer .site-footer__top section:last-child{
+    border-right: none;
+    
+}
+
+.video-embed-field-provider-youtube.container {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+
+article .programme p.social-media {
+    text-align: right;
+   
+}
+
+article .programme p.social-media a{
+    padding-right:10px;
+   
+}

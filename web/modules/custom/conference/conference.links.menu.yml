@@ -1,15 +1,22 @@
-conference.add_content:
-  title: 'Add Content'
-  route_name: node.add_page
+conference.add_programme:
+  title: 'Ajouter un programme'
+  route_name: node.add
   menu_name: account
+  route_parameters: { node_type: 'programmes' }
+
+conference.add_hotel:
+  title: 'Ajouter un hôtel'
+  route_name: node.add
+  menu_name: account
+  route_parameters: { node_type: 'hotels' }
 
 conference.voir_content:
-  title: 'Voir Content'
+  title: 'Voir Contenu'
   route_name: system.admin_content
   menu_name: account
 
 conference.admin_form:
-  title: 'Send Email'
+  title: 'Envoyer Email'
   route_name: conference.admin_form
   menu_name: account
   #parent: system.admin_config
