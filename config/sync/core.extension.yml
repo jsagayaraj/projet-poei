@@ -44,7 +44,6 @@ module:
   options: 0
   page_cache: 0
   path: 0
-  popup_after_login: 0
   quickedit: 0
   rdf: 0
   redirect: 0
