@@ -22,7 +22,7 @@ class PopupAfterLoginConfiguration extends ConfigFormBase {
    */
   protected function getEditableConfigNames() {
     return [
-      'popup_after_login_config.settings',
+      'popup_after_login.settings',
     ];
   }
 
@@ -31,7 +31,7 @@ class PopupAfterLoginConfiguration extends ConfigFormBase {
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
     $roles = array_map(['\Drupal\Component\Utility\Html', 'escape'], user_role_names(TRUE));
-    $config = $this->config('popup_after_login_config.settings');
+    $config = $this->config('popup_after_login.settings');
     $form['popup_after_login_choose_role'] = [
       '#type' => 'checkboxes',
       '#options' => $roles,
@@ -92,7 +92,7 @@ class PopupAfterLoginConfiguration extends ConfigFormBase {
    * Submit popup after login configurations.
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
-    $this->config('popup_after_login_config.settings')
+    $this->config('popup_after_login.settings')
       ->set('popup_after_login_choose_role', $form_state->getValue('popup_after_login_choose_role'))
       ->set('popup_after_login_first_title', $form_state->getValue('popup_after_login_first_title'))
       ->set('popup_after_login_first_message', $form_state->getValue('popup_after_login_first_message')['value'])

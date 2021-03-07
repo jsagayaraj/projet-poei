@@ -17,7 +17,7 @@ class PopupAfterLoginVerification extends ControllerBase {
    */
   public function popupAfterLoginResponse(Request $request) {
 
-    $config = $this->config('popup_after_login_config.settings');
+    $config = $this->config('popup_after_login.settings');
     $selected_roles = $config->get('popup_after_login_choose_role');
     $current_user = \Drupal::currentUser();
     $current_user_roles = $current_user->getRoles();
