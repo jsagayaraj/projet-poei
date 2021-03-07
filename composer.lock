@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "04c243085bd157c2d6e8a43d59a14f22",
+    "content-hash": "105f4fc92042d0477d75a7621bac67d0",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -4901,6 +4901,50 @@
             "homepage": "https://www.drupal.org/project/super_login",
             "support": {
                 "source": "https://git.drupalcode.org/project/super_login"
+            }
+        },
+        {
+            "name": "drupal/sweetalert2",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/sweetalert2.git",
+                "reference": "8.x-1.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/sweetalert2-8.x-1.0.zip",
+                "reference": "8.x-1.0",
+                "shasum": "77ae24cb27bd938f081b5ecfbb0c31847de7740d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0",
+                    "datestamp": "1529300025",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "keshav.k",
+                    "homepage": "https://www.drupal.org/user/3254066"
+                }
+            ],
+            "description": "Convert your Javascript alerts into something modern!",
+            "homepage": "https://www.drupal.org/project/sweetalert2",
+            "support": {
+                "source": "https://git.drupalcode.org/project/sweetalert2"
             }
         },
         {

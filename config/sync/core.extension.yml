@@ -44,6 +44,7 @@ module:
   options: 0
   page_cache: 0
   path: 0
+  popup_after_login: 0
   quickedit: 0
   rdf: 0
   redirect: 0
@@ -54,6 +55,7 @@ module:
   shortcut: 0
   simplelogin: 0
   smtp: 0
+  sweetalert2: 0
   system: 0
   taxonomy: 0
   text: 0
