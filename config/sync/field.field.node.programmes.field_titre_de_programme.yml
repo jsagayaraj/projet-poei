@@ -1,0 +1,21 @@
+uuid: 91ce3d13-6541-49cb-82f1-4d4a43f2f8a2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre_de_programme
+    - node.type.programmes
+  module:
+    - text
+id: node.programmes.field_titre_de_programme
+field_name: field_titre_de_programme
+entity_type: node
+bundle: programmes
+label: 'Titre de programme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

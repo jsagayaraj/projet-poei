@@ -1,0 +1,22 @@
+uuid: 85215f41-0ec3-4d53-ba04-1ff59e7fdc19
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pourqoi_nous
+id: node.pourqoi_nous.promote
+field_name: promote
+entity_type: node
+bundle: pourqoi_nous
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

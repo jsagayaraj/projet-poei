@@ -1,0 +1,38 @@
+uuid: 290ff213-e176-4c25-b3d6-02ef71219510
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.latest_programme
+  module:
+    - ctools
+    - system
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__latest_programme_block_1
+theme: bootstrap_barrio_subtheme
+region: featured_bottom_first
+weight: -3
+provider: null
+plugin: 'views_block:latest_programme-block_1'
+settings:
+  id: 'views_block:latest_programme-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      page: page
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

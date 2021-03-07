@@ -1,0 +1,25 @@
+uuid: 9ea2dcf6-1577-492e-b7ff-cc1f05746b42
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.footer_copyright.field_copyright
+    - node.type.footer_copyright
+  module:
+    - text
+    - user
+id: node.footer_copyright.teaser
+targetEntityType: node
+bundle: footer_copyright
+mode: teaser
+content:
+  field_copyright:
+    type: text_default
+    weight: 0
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  links: true

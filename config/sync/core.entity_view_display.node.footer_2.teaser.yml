@@ -1,0 +1,20 @@
+uuid: 4ccb2d2b-6797-49c5-8e87-c907d34dd01e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.footer_2.field_telephone
+    - field.field.node.footer_2.field_telephone_contactez_nous
+    - node.type.footer_2
+  module:
+    - user
+id: node.footer_2.teaser
+targetEntityType: node
+bundle: footer_2
+mode: teaser
+content: {  }
+hidden:
+  field_telephone: true
+  field_telephone_contactez_nous: true
+  links: true

@@ -1,0 +1,33 @@
+uuid: cd075847-5463-4516-a421-216a950c6ab4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_organisateurs_du_programme
+    - node.type.programmes
+id: node.programmes.field_organisateurs_du_programme
+field_name: field_organisateurs_du_programme
+entity_type: node
+bundle: programmes
+label: 'Organisateurs du programme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: role
+      role:
+        administrator: administrator
+        organisateur_programme: organisateur_programme
+        webmaster: webmaster
+        participant: '0'
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

@@ -1,0 +1,29 @@
+uuid: 1ba7994c-5e24-4cb7-b45d-3a8ff121f3b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caisse_test
+    - node.type.hotels
+    - taxonomy.vocabulary.caisse
+id: node.hotels.field_caisse_test
+field_name: field_caisse_test
+entity_type: node
+bundle: hotels
+label: caisse_test
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      caisse: caisse
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

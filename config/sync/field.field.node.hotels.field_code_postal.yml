@@ -1,0 +1,23 @@
+uuid: ea92ac77-508b-4821-8a5d-48cf103eb2d1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code_postal
+    - node.type.hotels
+id: node.hotels.field_code_postal
+field_name: field_code_postal
+entity_type: node
+bundle: hotels
+label: 'Code postal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

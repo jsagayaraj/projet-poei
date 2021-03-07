@@ -1,0 +1,86 @@
+uuid: 6e02d2c4-ea55-4a79-939f-4551a268e1a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.programmes.field_budget
+    - field.field.node.programmes.field_code_postal_p
+    - field.field.node.programmes.field_date_de_dubut
+    - field.field.node.programmes.field_date_de_fin
+    - field.field.node.programmes.field_des
+    - field.field.node.programmes.field_hotels
+    - field.field.node.programmes.field_image_programme
+    - field.field.node.programmes.field_inscription
+    - field.field.node.programmes.field_organisateurs_du_programme
+    - field.field.node.programmes.field_participants_du_programme
+    - field.field.node.programmes.field_pays_p
+    - field.field.node.programmes.field_rue_p
+    - field.field.node.programmes.field_titre_de_programme
+    - field.field.node.programmes.field_ville_p
+    - node.type.programmes
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.programmes.teaser
+targetEntityType: node
+bundle: programmes
+mode: teaser
+content:
+  content_moderation_control:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_date_de_dubut:
+    type: datetime_default
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_date_de_fin:
+    type: datetime_default
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_image_programme:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_titre_de_programme:
+    type: text_default
+    weight: 3
+    region: content
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+  links:
+    weight: 1
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_budget: true
+  field_code_postal_p: true
+  field_des: true
+  field_hotels: true
+  field_inscription: true
+  field_organisateurs_du_programme: true
+  field_participants_du_programme: true
+  field_pays_p: true
+  field_rue_p: true
+  field_ville_p: true

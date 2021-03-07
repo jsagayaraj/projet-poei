@@ -1,0 +1,21 @@
+uuid: e0a14950-95b7-4b0f-a7f6-597da94222f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pays_hotels
+    - node.type.hotels
+id: node.hotels.field_pays_hotels
+field_name: field_pays_hotels
+entity_type: node
+bundle: hotels
+label: Pays
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: France
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,20 @@
+uuid: 51900223-48f1-486d-9d5b-461e830415a2
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_code_postal
+field_name: field_code_postal
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,21 @@
+uuid: 059d1b4c-2e42-461e-95c1-de08f0e86db9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pays_p
+    - node.type.programmes
+id: node.programmes.field_pays_p
+field_name: field_pays_p
+entity_type: node
+bundle: programmes
+label: Pays
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: France
+default_value_callback: ''
+settings: {  }
+field_type: string

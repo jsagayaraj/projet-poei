@@ -1,0 +1,25 @@
+uuid: 6d45a2b8-6298-432d-a20a-96b9ad7129dc
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_video
+    - node.type.pourqoi_nous
+  module:
+    - video_embed_field
+id: node.pourqoi_nous.field_video
+field_name: field_video
+entity_type: node
+bundle: pourqoi_nous
+label: video
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

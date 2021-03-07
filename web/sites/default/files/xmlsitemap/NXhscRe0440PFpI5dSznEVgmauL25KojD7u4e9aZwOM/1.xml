@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/drupal-8/projet-poei/web/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<url><loc>http://localhost/drupal-8/projet-poei/web/taxonomy/term/1</loc><lastmod>2019-04-05T04:48Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/</loc><changefreq>daily</changefreq><priority>1.0</priority></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/fintech-community-winter-edition</loc><lastmod>2019-12-19T05:35Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/hotels/radisson-blu-hotel</loc><lastmod>2019-12-19T06:22Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/hotels/hotel-ares-eiffel</loc><lastmod>2019-12-19T05:59Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/hotels/hotel-armoni</loc><lastmod>2019-12-19T06:25Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/hotels/les-hauts-de-passy</loc><lastmod>2019-12-19T06:15Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/hotels/le-meridien-etoile</loc><lastmod>2019-12-19T06:18Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/boma-momentum</loc><lastmod>2020-05-15T09:39Z</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/mongodblocal-paris</loc><lastmod>2019-12-19T16:11Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/les-mardis-de-la-mer-2019-2020</loc><lastmod>2019-12-19T09:38Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/node/140</loc><lastmod>2019-12-18T15:46Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/node/142</loc><lastmod>2019-12-18T23:39Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/node/143</loc><lastmod>2019-12-18T22:57Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/construisons-ensemble-lentreprise-de-demain</loc><lastmod>2019-12-19T10:27Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/node/145</loc><lastmod>2019-12-19T12:15Z</lastmod><changefreq>yearly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/programmes/android-makers-2020</loc><lastmod>2020-05-15T08:39Z</lastmod><changefreq>hourly</changefreq></url>
+<url><loc>http://localhost/drupal-8/projet-poei/web/abluo-aptent-capto-cui-exputo-lucidus-quae-refoveo-tum-vicis.</loc><lastmod>2019-07-21T02:21Z</lastmod><changefreq>yearly</changefreq></url>
+</urlset>

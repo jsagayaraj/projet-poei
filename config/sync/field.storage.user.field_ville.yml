@@ -1,0 +1,21 @@
+uuid: 4f29daa2-7266-4bc4-813c-27c48e1e93e4
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_ville
+field_name: field_ville
+entity_type: user
+type: string
+settings:
+  max_length: 50
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

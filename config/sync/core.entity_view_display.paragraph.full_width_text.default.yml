@@ -1,0 +1,30 @@
+uuid: c3ae927f-7cb9-4564-bb13-85ab8c236e63
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width_text.field_text_
+    - field.field.paragraph.full_width_text.field_title_header
+    - paragraphs.paragraphs_type.full_width_text
+  module:
+    - text
+id: paragraph.full_width_text.default
+targetEntityType: paragraph
+bundle: full_width_text
+mode: default
+content:
+  field_text_:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_title_header:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

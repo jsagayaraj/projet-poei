@@ -1,0 +1,24 @@
+uuid: bda40bf9-09f5-4cf5-81cd-22d51f644bdc
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.pourquoi_nous
+  module:
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__pourquoi_nous_block_1
+theme: bootstrap_barrio_subtheme
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'views_block:pourquoi_nous-block_1'
+settings:
+  id: 'views_block:pourquoi_nous-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

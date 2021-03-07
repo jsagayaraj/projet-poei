@@ -1,0 +1,36 @@
+uuid: 297c965b-2a4d-479c-b5c4-6af94f27c470
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_section
+    - node.type.page
+    - paragraphs.paragraphs_type.banner
+    - paragraphs.paragraphs_type.full_width_text
+  module:
+    - entity_reference_revisions
+id: node.page.field_section
+field_name: field_section
+entity_type: node
+bundle: page
+label: 'paragraph full width image and text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      banner: banner
+      full_width_text: full_width_text
+    target_bundles_drag_drop:
+      banner:
+        enabled: true
+        weight: 2
+      full_width_text:
+        enabled: true
+        weight: 4
+field_type: entity_reference_revisions

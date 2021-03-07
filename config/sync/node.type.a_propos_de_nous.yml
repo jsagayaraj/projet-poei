@@ -1,0 +1,17 @@
+uuid: c9b09ad8-af30-40ac-8e42-beccdf35967b
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'A propos de nous'
+type: a_propos_de_nous
+description: 'a propos de nous for footer third'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

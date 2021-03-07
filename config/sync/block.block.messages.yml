@@ -1,0 +1,20 @@
+uuid: c67e10cd-4379-4d5d-ac8a-846223ff57e2
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio_subtheme
+id: messages
+theme: bootstrap_barrio_subtheme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

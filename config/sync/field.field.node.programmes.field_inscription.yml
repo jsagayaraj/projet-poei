@@ -1,0 +1,32 @@
+uuid: f464db20-1fb9-4287-be66-f4b3c757ace9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_inscription
+    - node.type.programmes
+    - webform.webform.programme_register
+  module:
+    - webform
+id: node.programmes.field_inscription
+field_name: field_inscription
+entity_type: node
+bundle: programmes
+label: Inscription
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    default_data: ''
+    status: open
+    open: ''
+    close: ''
+    target_uuid: a4567bfe-84a6-4b28-b5e7-db902184c8f9
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+field_type: webform

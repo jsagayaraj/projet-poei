@@ -1,0 +1,17 @@
+uuid: acfa8d24-d9ce-43db-abd3-81cb3f6b5578
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Pourqoi nous'
+type: pourqoi_nous
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

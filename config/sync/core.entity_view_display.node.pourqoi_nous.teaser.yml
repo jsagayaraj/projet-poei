@@ -1,0 +1,24 @@
+uuid: 500163fd-16b2-42a2-a283-cd813aab0fbd
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pourqoi_nous.field_title_viedo
+    - field.field.node.pourqoi_nous.field_video
+    - node.type.pourqoi_nous
+  module:
+    - user
+id: node.pourqoi_nous.teaser
+targetEntityType: node
+bundle: pourqoi_nous
+mode: teaser
+content:
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_title_viedo: true
+  field_video: true

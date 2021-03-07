@@ -1,0 +1,30 @@
+uuid: fc1d11e5-585b-4d02-91b2-a55f4222f0a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.a_propos_de_nous.body
+    - node.type.a_propos_de_nous
+  module:
+    - text
+    - user
+id: node.a_propos_de_nous.teaser
+targetEntityType: node
+bundle: a_propos_de_nous
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

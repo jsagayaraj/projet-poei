@@ -1,0 +1,14 @@
+uuid: ab83445d-fab1-45c9-ba7a-0028d2856517
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.organisateur_programme
+  module:
+    - user
+id: user_add_role_action.organisateur_programme
+label: 'Add the Organisateur programme role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: organisateur_programme

@@ -1,0 +1,21 @@
+uuid: 2abf9db4-391d-4982-917e-d92ae98530a3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_copyright
+    - node.type.footer_copyright
+  module:
+    - text
+id: node.footer_copyright.field_copyright
+field_name: field_copyright
+entity_type: node
+bundle: footer_copyright
+label: copyright
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,17 @@
+uuid: 4eda0244-b3d0-4e9b-bcf6-852ac493a207
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'footer copyright'
+type: footer_copyright
+description: ''
+help: ''
+new_revision: true
+preview_mode: 0
+display_submitted: false

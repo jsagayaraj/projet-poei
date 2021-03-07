@@ -1,0 +1,19 @@
+uuid: a99401d3-3cd1-4efc-add8-76c6b135547d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_titre
+    - node.type.hotels
+id: node.hotels.field_titre
+field_name: field_titre
+entity_type: node
+bundle: hotels
+label: 'Titre de hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

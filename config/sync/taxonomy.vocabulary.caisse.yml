@@ -1,0 +1,8 @@
+uuid: 3a40108e-3fdd-44d5-bd51-c31cad186775
+langcode: en
+status: true
+dependencies: {  }
+name: caisse
+vid: caisse
+description: ''
+weight: 0

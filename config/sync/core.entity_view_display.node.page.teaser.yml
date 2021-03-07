@@ -4,10 +4,10 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.page.body
+    - field.field.node.page.field_full_width_text
+    - field.field.node.page.field_section
     - node.type.page
   module:
-    - text
     - user
 _core:
   default_config_hash: cSv5lDnbIgDug475Hdz3woED2XMqYv3awI-J9u1JLbY
@@ -16,15 +16,14 @@ targetEntityType: node
 bundle: page
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 100
-    region: content
-    settings:
-      trim_length: 600
+  addtoany:
+    weight: 101
+    settings: {  }
     third_party_settings: {  }
+    region: content
   links:
     weight: 101
     region: content
-hidden: {  }
+hidden:
+  field_full_width_text: true
+  field_section: true

@@ -1,0 +1,22 @@
+uuid: 164654c9-a92b-436a-bbcc-e2d93af0b620
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pourqoi_nous
+id: node.pourqoi_nous.status
+field_name: status
+entity_type: node
+bundle: pourqoi_nous
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

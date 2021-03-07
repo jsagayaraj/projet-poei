@@ -1,0 +1,23 @@
+uuid: 19e566a3-2253-44b8-8cc2-858c25fe6efb
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_code_postal_p
+    - node.type.programmes
+id: node.programmes.field_code_postal_p
+field_name: field_code_postal_p
+entity_type: node
+bundle: programmes
+label: 'Code postal'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

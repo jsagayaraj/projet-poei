@@ -1,0 +1,14 @@
+uuid: afdb431b-4cae-4787-818a-8c74df883d8f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.organisateur_programme
+  module:
+    - user
+id: user_remove_role_action.organisateur_programme
+label: 'Remove the Organisateur programme role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: organisateur_programme

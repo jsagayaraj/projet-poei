@@ -1,0 +1,8 @@
+uuid: f93fb08e-9e97-4379-b963-610216be3663
+langcode: en
+status: true
+dependencies: {  }
+id: card_date
+label: card_date
+locked: false
+pattern: 'j D. M. Y - G:i'

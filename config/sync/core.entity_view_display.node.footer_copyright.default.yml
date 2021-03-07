@@ -1,0 +1,24 @@
+uuid: fa5ccd2b-9704-481a-a059-2f7397cc3b08
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.footer_copyright.field_copyright
+    - node.type.footer_copyright
+  module:
+    - text
+    - user
+id: node.footer_copyright.default
+targetEntityType: node
+bundle: footer_copyright
+mode: default
+content:
+  field_copyright:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden:
+  links: true

@@ -1,0 +1,11 @@
+uuid: c685a8ee-640f-48d3-98af-4afa93cfe303
+langcode: en
+status: true
+dependencies: {  }
+id: participant
+label: Participant
+weight: 3
+is_admin: null
+permissions:
+  - 'administer paragraphs settings'
+  - 'administer paragraphs types'

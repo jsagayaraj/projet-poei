@@ -1,0 +1,18 @@
+uuid: b74e2e70-494c-4ae6-8eff-0cb199e91dc8
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Programmes
+type: programmes
+description: 'Programmes for conference'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

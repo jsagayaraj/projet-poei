@@ -774,12 +774,12 @@ $settings['entity_update_backup'] = TRUE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-   include $app_root . '/' . $site_path . '/settings.local.php';
-}
+if (file_exists(__DIR__ . '/settings.local.php')) {
+  include __DIR__ . '/settings.local.php';
+ }
 $config_directories['sync'] = '../config/sync';
 $databases['default']['default'] = array (
-  'database' => 'conference_mini_projet',
+  'database' => 'conference_project',
   'username' => 'root',
   'password' => '',
   'prefix' => '',
@@ -790,4 +790,7 @@ $databases['default']['default'] = array (
 );
 
 
-$config['system.file']['path']['temporary'] = '/tmp';
+$config['system.file']['path.temporary'] = '/tmp';
+
+$config['config_split.config_split.dev']['status'] = TRUE;
+$config['config_split.config_split.prod']['status'] = FALSE;

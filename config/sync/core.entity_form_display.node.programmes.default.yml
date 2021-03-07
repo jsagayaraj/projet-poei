@@ -1,0 +1,162 @@
+uuid: 530df662-34cd-49b6-a70f-5fb5077b1c5f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.programmes.field_budget
+    - field.field.node.programmes.field_code_postal_p
+    - field.field.node.programmes.field_date_de_dubut
+    - field.field.node.programmes.field_date_de_fin
+    - field.field.node.programmes.field_des
+    - field.field.node.programmes.field_hotels
+    - field.field.node.programmes.field_image_programme
+    - field.field.node.programmes.field_inscription
+    - field.field.node.programmes.field_organisateurs_du_programme
+    - field.field.node.programmes.field_participants_du_programme
+    - field.field.node.programmes.field_pays_p
+    - field.field.node.programmes.field_rue_p
+    - field.field.node.programmes.field_titre_de_programme
+    - field.field.node.programmes.field_ville_p
+    - image.style.thumbnail
+    - node.type.programmes
+    - workflows.workflow.editorial
+  module:
+    - content_moderation
+    - datetime
+    - image
+    - text
+    - webform
+id: node.programmes.default
+targetEntityType: node
+bundle: programmes
+mode: default
+content:
+  field_budget:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_code_postal_p:
+    weight: 14
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  field_date_de_dubut:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_date_de_fin:
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_des:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hotels:
+    weight: 16
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_image_programme:
+    weight: 6
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  field_inscription:
+    weight: 7
+    settings:
+      default_data: true
+    third_party_settings: {  }
+    type: webform_entity_reference_select
+    region: content
+  field_organisateurs_du_programme:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_participants_du_programme:
+    type: entity_reference_autocomplete
+    weight: 17
+    region: content
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_pays_p:
+    weight: 15
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_rue_p:
+    weight: 13
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_titre_de_programme:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_ville_p:
+    weight: 12
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  moderation_state:
+    type: moderation_state_default
+    weight: 1
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 2
+    region: content
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  path: true
+  promote: true
+  sticky: true
+  uid: true

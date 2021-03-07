@@ -1,0 +1,41 @@
+uuid: 08cb647a-d0b8-41e0-ac66-55c96e2c14a4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.pourqoi_nous.field_title_viedo
+    - field.field.node.pourqoi_nous.field_video
+    - node.type.pourqoi_nous
+  module:
+    - user
+    - video_embed_field
+id: node.pourqoi_nous.default
+targetEntityType: node
+bundle: pourqoi_nous
+mode: default
+content:
+  field_title_viedo:
+    weight: 101
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_video:
+    weight: 102
+    label: hidden
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

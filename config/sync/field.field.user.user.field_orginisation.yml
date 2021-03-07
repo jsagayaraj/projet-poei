@@ -1,0 +1,20 @@
+uuid: 07621111-5432-42f6-9616-2f7a9354dfd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_orginisation
+  module:
+    - user
+id: user.user.field_orginisation
+field_name: field_orginisation
+entity_type: user
+bundle: user
+label: Orginisation
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

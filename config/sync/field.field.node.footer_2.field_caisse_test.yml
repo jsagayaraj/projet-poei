@@ -1,0 +1,29 @@
+uuid: 84721af4-6dc7-48f3-9729-b02768033c93
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_caisse_test
+    - node.type.footer_2
+    - taxonomy.vocabulary.caisse
+id: node.footer_2.field_caisse_test
+field_name: field_caisse_test
+entity_type: node
+bundle: footer_2
+label: caisse_test
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      caisse: caisse
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

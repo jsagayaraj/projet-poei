@@ -1,0 +1,20 @@
+uuid: 6cab50ab-c5cd-4f6c-8d21-f25ae86baa80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_in
+  module:
+    - user
+id: user.user.field_in
+field_name: field_in
+entity_type: user
+bundle: user
+label: 'Indications Particulières'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

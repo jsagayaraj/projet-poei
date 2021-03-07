@@ -1,0 +1,28 @@
+uuid: 67fc7c53-7b01-4e05-8e4d-3e592d7926b3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_participants_du_programme
+    - node.type.programmes
+id: node.programmes.field_participants_du_programme
+field_name: field_participants_du_programme
+entity_type: node
+bundle: programmes
+label: 'Participants du programme'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

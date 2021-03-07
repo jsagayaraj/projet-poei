@@ -1,0 +1,42 @@
+uuid: cc3881fc-3551-4102-b78c-74c263167cde
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.footer_2.field_caisse_test
+    - field.field.node.footer_2.field_telephone
+    - field.field.node.footer_2.field_telephone_contactez_nous
+    - node.type.footer_2
+  module:
+    - address
+    - user
+id: node.footer_2.default
+targetEntityType: node
+bundle: footer_2
+mode: default
+content:
+  field_caisse_test:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_telephone:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: address_default
+    region: content
+  field_telephone_contactez_nous:
+    weight: 1
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden:
+  links: true

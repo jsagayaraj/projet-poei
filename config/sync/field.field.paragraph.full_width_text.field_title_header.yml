@@ -1,0 +1,21 @@
+uuid: 101551f7-6855-4e42-9f5f-e88f19c3f011
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title_header
+    - paragraphs.paragraphs_type.full_width_text
+  module:
+    - text
+id: paragraph.full_width_text.field_title_header
+field_name: field_title_header
+entity_type: paragraph
+bundle: full_width_text
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

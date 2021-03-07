@@ -1,0 +1,19 @@
+uuid: f7d9c02a-b8fd-4c9a-a584-baac0ad366b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rue
+    - node.type.hotels
+id: node.hotels.field_rue
+field_name: field_rue
+entity_type: node
+bundle: hotels
+label: Rue
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

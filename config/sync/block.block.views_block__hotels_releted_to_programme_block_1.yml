@@ -1,0 +1,33 @@
+uuid: cf01d22b-203a-40ba-9e69-eda907d1e7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.hotels_releted_to_programme
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap_barrio_subtheme
+id: views_block__hotels_releted_to_programme_block_1
+theme: bootstrap_barrio_subtheme
+region: featured_bottom_first
+weight: 0
+provider: null
+plugin: 'views_block:hotels_releted_to_programme-block_1'
+settings:
+  id: 'views_block:hotels_releted_to_programme-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      programmes: programmes
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

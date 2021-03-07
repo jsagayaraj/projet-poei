@@ -1,0 +1,17 @@
+uuid: cd712638-7363-4bec-8ef9-2d5c6a74c2c8
+langcode: en
+status: true
+dependencies: {  }
+id: webmaster
+label: Webmaster
+weight: 5
+is_admin: null
+permissions:
+  - 'access webform submission user'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'delete any programmes content'
+  - 'delete own programmes content'
+  - 'edit any programmes content'
+  - 'edit own programmes content'

@@ -1,0 +1,21 @@
+uuid: 14a8f111-71b0-41f0-8963-11c6fd6d2303
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_pays
+field_name: field_pays
+entity_type: user
+type: string
+settings:
+  max_length: 50
+  is_ascii: false
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

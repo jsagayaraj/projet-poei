@@ -1,0 +1,41 @@
+uuid: e44f56bb-cd48-4c81-81d4-cb8e54455124
+langcode: en
+status: true
+dependencies: {  }
+id: organisateur_programme
+label: 'Organisateur programme'
+weight: 4
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access webform submission user'
+  - 'administer nodes'
+  - 'administer webform'
+  - 'administer webform element access'
+  - 'administer webform submission'
+  - 'create article content'
+  - 'create footer_2 content'
+  - 'create footer_copyright content'
+  - 'create header content'
+  - 'create hotels content'
+  - 'create page content'
+  - 'create programmes content'
+  - 'delete any article content'
+  - 'delete own article content'
+  - 'delete own footer_2 content'
+  - 'delete own footer_copyright content'
+  - 'delete own header content'
+  - 'delete own hotels content'
+  - 'delete own page content'
+  - 'delete own programmes content'
+  - 'edit own article content'
+  - 'edit own footer_2 content'
+  - 'edit own footer_copyright content'
+  - 'edit own header content'
+  - 'edit own hotels content'
+  - 'edit own page content'
+  - 'edit own programmes content'
+  - 'grant own content access'
+  - 'use editorial transition create_new_draft'
+  - 'view any unpublished content'
+  - 'view own unpublished content'

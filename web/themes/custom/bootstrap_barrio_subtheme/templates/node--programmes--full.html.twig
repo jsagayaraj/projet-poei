@@ -95,21 +95,23 @@
   </header>
   <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
     {{ content }}
-  </div> 
+  </div>
 </article> #}
 
  <div class="container programme">
   <div class="row pt-3">
     <div class="col-md-8">
       {{ content.field_image_programme }}
-    </div>  
+    </div>
     <div class="col-md-4 d-flex flex-column">
-      <p class="social-media"><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <p class="social-media">
+        <a href="http://localhost/drupal-8/projet-poei/web/export-xls">Export xlsx</a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square fa-2x"></i></a>
       <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter-square fa-2x"></i></a></p>
       <p>{{ content.field_date_de_dubut }}</p>
       <h2>{{ content.field_titre_de_programme }}</h2>
-      
-      
+
+
       <div class="mt-auto">
         {% if logged_in %}
         <!-- Modal trigger-->
@@ -120,19 +122,19 @@
           <div><a href="{{base_url}}/user/login" class="btn btn-warning btn-lg btn-block">Connectez-vous pour vous inscrire</a></div>
         {% endif %}
       </div>
-        
-    </div>  
-  </div>  
+
+    </div>
+  </div>
 
   <div>
     <hr>
   </div>
 
   <div class="row">
-    <div class="col-md-8">      
+    <div class="col-md-8">
       {{ content.field_des }}
-      
-    </div>  
+
+    </div>
     <div class="col-md-4">
       <h5>Date</h5>
       <div>Debut: <span>{{ content.field_date_de_dubut }}</span></div>
@@ -143,9 +145,9 @@
         <p>{{ content.field_code_postal_p }} {{ content.field_ville_p }}</p>
         <p>{{ content.field_pays_p }}</p>
         <p>{{ content.field_participants_du_programme }}</p>
-        
+
       </div>
-    </div>  
+    </div>
   </div>
 </div>
 
@@ -164,7 +166,7 @@
       <div class="modal-body">
         {{ content.field_inscription }}
       </div>
-      
+
     </div>
   </div>
-</div>  
+</div>

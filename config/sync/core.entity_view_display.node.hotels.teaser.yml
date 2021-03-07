@@ -1,0 +1,86 @@
+uuid: 9bc662ca-605d-4176-97be-2eee402dc435
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotels.field_code_postal
+    - field.field.node.hotels.field_description
+    - field.field.node.hotels.field_email
+    - field.field.node.hotels.field_image_hotel
+    - field.field.node.hotels.field_pays_hotels
+    - field.field.node.hotels.field_prix
+    - field.field.node.hotels.field_rue
+    - field.field.node.hotels.field_t
+    - field.field.node.hotels.field_titre
+    - field.field.node.hotels.field_ville
+    - node.type.hotels
+  module:
+    - image
+    - user
+id: node.hotels.teaser
+targetEntityType: node
+bundle: hotels
+mode: teaser
+content:
+  field_code_postal:
+    type: number_integer
+    weight: 3
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_image_hotel:
+    type: image
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  field_pays_hotels:
+    type: string
+    weight: 5
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_prix:
+    type: number_integer
+    weight: 6
+    region: content
+    label: inline
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+  field_titre:
+    type: string
+    weight: 1
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_ville:
+    type: string
+    weight: 4
+    region: content
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_description: true
+  field_email: true
+  field_rue: true
+  field_t: true

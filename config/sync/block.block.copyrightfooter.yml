@@ -1,0 +1,35 @@
+uuid: b23dd190-c997-4473-a98f-9d75276547bc
+langcode: en
+status: true
+dependencies:
+  module:
+    - copyright_footer
+    - ctools
+  theme:
+    - bootstrap_barrio_subtheme
+id: copyrightfooter
+theme: bootstrap_barrio_subtheme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: copyright_footer
+settings:
+  id: copyright_footer
+  label: 'Copyright Footer'
+  provider: copyright_footer
+  label_display: '0'
+  organization_name: Conference
+  year_origin: ''
+  year_to_date: ''
+  version: ''
+  version_url: ''
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      hotels: hotels
+      page: page
+      programmes: programmes
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

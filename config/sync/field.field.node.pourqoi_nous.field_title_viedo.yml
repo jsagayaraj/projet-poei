@@ -1,0 +1,19 @@
+uuid: edf33cad-b6f1-4aae-b06f-78125f36f3d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_title_viedo
+    - node.type.pourqoi_nous
+id: node.pourqoi_nous.field_title_viedo
+field_name: field_title_viedo
+entity_type: node
+bundle: pourqoi_nous
+label: 'Title viedo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

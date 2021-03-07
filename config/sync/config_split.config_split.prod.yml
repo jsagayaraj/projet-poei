@@ -1,0 +1,16 @@
+uuid: 0714d67b-58cd-4682-881e-56ca76949e33
+langcode: en
+status: false
+dependencies: {  }
+id: prod
+label: prod
+description: ''
+folder: ../config/prod
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - 'webform.*'
+graylist_dependents: false
+graylist_skip_equal: false
+weight: 0

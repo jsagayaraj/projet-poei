@@ -1,0 +1,28 @@
+uuid: d19479ca-042f-4760-b522-718cb38dc162
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.a_propos_de_nous.body
+    - node.type.a_propos_de_nous
+  module:
+    - text
+    - user
+id: node.a_propos_de_nous.default
+targetEntityType: node
+bundle: a_propos_de_nous
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

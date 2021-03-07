@@ -1,0 +1,19 @@
+uuid: 4ba99c52-0e50-436b-be72-1b35d8d11256
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_adresse
+    - taxonomy.vocabulary.caisse
+id: taxonomy_term.caisse.field_adresse
+field_name: field_adresse
+entity_type: taxonomy_term
+bundle: caisse
+label: ADRESSE
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
